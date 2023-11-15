@@ -1,0 +1,26 @@
+.hlavni 
+{
+    background-color: blue;
+    color: white;
+    padding: 24px;
+    max-width: 400px;
+    margin: auto;
+}
+
+main
+{
+    padding: 10px;
+}
+
+img
+{
+    width: 100%;
+}
+
+.odsazeni
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 0;
+}
