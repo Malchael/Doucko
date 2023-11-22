@@ -19,8 +19,34 @@ img
 
 .odsazeni
 {
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+header
+{
+    background-color: rgb(13, 231, 13);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+body
+{
+    margin: 0px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover
+{
+    color: red;
 }

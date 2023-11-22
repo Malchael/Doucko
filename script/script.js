@@ -5,6 +5,7 @@ const ShinanoImg = "https://azurlane.netojuu.com/images/thumb/a/a9/Shinano.png/8
 function Bismarck()
 {
     let img = document.getElementById("img");
+    let seznam = document.getElementById("vypis"); 
 
     if(img.src == BismarckImg)
     {
@@ -12,13 +13,17 @@ function Bismarck()
     }
     else
     {
-        img.src = BismarckImg; 
+        img.src = BismarckImg;
+        seznam.innerHTML += "Bismarck" + "<br>";
+
     }
+    document.getElementById("vypis")=seznam;
 }
 
 function Unzen()
 {
     let img = document.getElementById("img");
+    let seznam = document.getElementById("vypis"); 
 
     if(img.src == UnzenImg)
     {
@@ -27,12 +32,15 @@ function Unzen()
     else
     {
         img.src = UnzenImg; 
+        seznam.innerHTML += "Unzen" + "<br>";
     }
+    document.getElementById("vypis")=seznam;
 }
 
 function Shinano()
 {
     let img = document.getElementById("img");
+    let seznam = document.getElementById("vypis"); 
 
     if(img.src == ShinanoImg)
     {
@@ -41,7 +49,9 @@ function Shinano()
     else
     {
         img.src = ShinanoImg; 
+        seznam.innerHTML += "Shinano" + "<br>";
     }
+    document.getElementById("vypis")=seznam;
 }
 
 function Zmenit() //aby volani funcke Bismarck(); Unzen() a Shinano(), tak tahle funkce musi byt pod nima. 
@@ -63,23 +73,28 @@ function Zmenit() //aby volani funcke Bismarck(); Unzen() a Shinano(), tak tahle
     else 
     {   
         alert("Nenapsali jste nic ze seznamu! Piste jen Bismarck, Unzen, Shinano!")
-    }
+    } 
 }
 
-function nahoda()
+function Random_img()
 {
     let img = document.getElementById("img");
+    let x = true;
+    let pole = [BismarckImg, UnzenImg, ShinanoImg]; //0 1 2 
 
-    if(img.src == BismarckImg)
+    while (x==true)
     {
-       img.src = UnzenImg;
-    }
-    else if(img.src == UnzenImg)
-    {
-        img.src = ShinanoImg;
-    }
-    else
-    {
-        img.src = BismarckImg;
+        let nah_cislo = Math.floor((Math.random()*3));
+
+        if (pole[nah_cislo] == img.src)
+        {
+            
+        }
+        else 
+        {
+            img.src = pole[nah_cislo]
+            x = false;
+        }
     }
 }
+

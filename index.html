@@ -11,7 +11,8 @@
 </head>
 <body>
     <header>
-
+        <a href="/login/login.html" style="margin-right: 10px;" style="text-decoration: none;">Okdaz na login</a>
+        <a href="https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki">Odkaz na Azur lane wiki.</a>
     </header>
     <main>
         <div class="hlavni">
@@ -27,7 +28,7 @@
                 <button onclick="Zmenit()">Zmenit</button>
             </div>
             <div class="odsazeni">
-                <button onclick="">Nahodny obrazek</button>
+                <button onclick="Random_img()">Nahodny obrazek</button>
                 <button onclick="Bismarck()">Bismarck</button>
                 <button onclick="Unzen()">Unzen</button>
                 <button onclick="Shinano()">Shinano</button>
@@ -40,7 +41,10 @@
                 <p></p>
             </div>
             <div class="odsazeni">
-                <h3>Historie vyberu</h3>
+                <h3>Historie vyberu: </h3>                
+            </div>
+            <div class="odsazeni">
+                <p id="vypis"></p>
             </div>
             <div class="odsazeni">
                 <button>Vymazat historii</button>
